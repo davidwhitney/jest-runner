@@ -1,6 +1,6 @@
 async function loadResults() {
   const results = await fetch("/results.json");
-  const body = await results.body.json();
+  const body = await results.json();
   console.log(body);
 }
 
