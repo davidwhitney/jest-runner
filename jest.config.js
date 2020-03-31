@@ -1,6 +1,5 @@
 module.exports = {
     "reporters": [
-      "default",
       ["./node_modules/jest-html-reporter", {
         "pageTitle": "Test Suite Reporter",
         "outputPath": "views/index.html",

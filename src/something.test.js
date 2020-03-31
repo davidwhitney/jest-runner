@@ -1,3 +1,5 @@
+const something = require("./something");
+
 describe("Desc 1", () => {
   
   it("Desc 1 - Test 1", () => {
@@ -36,6 +38,12 @@ describe("Desc 1", () => {
   
   it("Test 3 - fails", () => {
     expect("a").toBe("b");
-  })
+  });
+  
+  it("Can use a module", () => {
+    const returnValue = something();
+    
+    expect(returnValue).toBe(123);
+  });
   
 });

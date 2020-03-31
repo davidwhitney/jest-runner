@@ -1,13 +1,10 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
+  "name": "jest-runner",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "description": "A TDD JavaScript Sandbox on Glitch",
   "main": "server.js",
   "scripts": {
-    "start": "jest --json --outputFile=public/results.json && node server.js"
+    "start": "jest --ci --silent --json --outputFile=public/results.json || true && node server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
