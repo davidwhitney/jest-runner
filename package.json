@@ -12,7 +12,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "jest": "latest",
-    "jest-cli": "latest"
+    "jest-cli": "latest",
+    "jest-html-reporter": "latest"
   },
   "engines": {
     "node": "12.x"

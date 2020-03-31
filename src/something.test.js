@@ -34,5 +34,8 @@ describe("Desc 1", () => {
     expect(a).toBe(b);
   });
   
+  it("Test 3 - fails", () => {
+    expect("a").toBe("b");
+  })
   
 });
